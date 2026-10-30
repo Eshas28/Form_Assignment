@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .form-box {
+            border: 2px solid black;
+            padding: 30px;
+            width: 350px;
+            margin: 50px auto;
+            border-radius: 8px;
+            background:linear-gradient(rgb(234, 234, 234),rgb(164, 164, 231))
+        }
+
+        button{
+            border: solid black;
+            padding:3px;
+            background-color: rgb(98, 98, 246);
+            cursor:pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+            
+        }
+        button:hover {
+             background-color: #294a9c;
+}
+         h1{
+            text-align: center;
+         }
+         
+    </style>
+</head>
+
+<body>
+    <div class="form-box">
+        <form>
+            <h1>Registration</h1>
+            <br>
+            <input  type="radio" name="Personal" value="p">Personal
+            <input  type="radio" name="Company" value="c">Company
+            <br>
+            <br>
+            <span>
+                <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+            <br>
+            <br>
+             <span>
+                <i class="fa-solid fa-user"></i>
+             </span>
+            <input type="text" id="name" placeholder="Enter name">
+            <br>
+            <br>
+            <span>
+               <i class="fa-solid fa-lock"></i> 
+            </span>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+            <br>
+            <br>
+            <input type="radio" name="gender" value="m">Male
+            <input type="radio" name="gender" value="f">Female
+            <br>
+            <br>
+            <p>
+                By clicking Register,you are agree on our
+                <a href="#">terms and conditions</a>.
+            </p><br>
+            <button>Register</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

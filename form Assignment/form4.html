@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+        integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            display: flex;
+            padding: 20px;
+        }
+
+        label span {
+            color: red;
+        }
+
+        .form-box {
+
+            border: 2px solid black;
+            padding: 30px;
+            width: 700px;
+            margin: 50px auto;
+            border-radius: 8px;
+            background: linear-gradient( rgb(145, 207, 241), rgb(232, 124, 246))
+        }
+
+        button {
+            border: solid black;
+            padding: 10px;
+            
+            background-color: rgb(98, 98, 246);
+            cursor: pointer;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto;
+
+        }
+
+        button:hover {
+            background-color: #294a9c;
+        }
+
+        form>input {
+            width: 100%;
+            height: 30px;
+            padding: 7px;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            background-color: white;
+            margin-bottom: 17px;
+        }
+        .name-box{
+            width: 100%;
+            height: 30px;
+            padding: 7px;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            background-color: white;
+            margin-bottom: 17px;
+        }
+        .verification {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.verification label {
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.captcha {
+    width: 190px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 10px;
+}
+
+.captcha input {
+    width: 18px;
+    height: 18px;
+}
+
+.captcha strong {
+    color: #4169b5;
+    font-size: 11px;
+}
+h2{
+    text-align: center;
+}
+    </style>
+</head>
+
+<body>
+    <div class="form-box">
+        <h2>School Championship Registration Form</h2>
+
+        <form>
+
+            <label>School name:<span>*</span></label>
+            <input type="text" required>
+
+            <label>Schooler name:<span>*</span></label>
+            <div class="name-box">
+                <input type="text" placeholder="First" required>
+                <input type="text" placeholder="Last" required>
+            </div>
+
+            <label>Parent name:<span>*</span></label>
+            <div class="name-box">
+                <input type="text" placeholder="First" required>
+                <input type="text" placeholder="Last" required>
+            </div>
+
+            <label>Parent phone:<span>*</span></label>
+            <input type="tel" placeholder="#### ### ####" required><br>
+
+            <label>Parent email:<span>*</span></label>
+            <input type="email" required><br>
+
+            <label>Preferred sport:<span>*</span></label>
+            <input type="text" required>
+
+            <div class="verification">
+                <label>Verification<span>*</span></label>
+
+                <div class="captcha">
+                    <input type="checkbox">
+                    <span>I'm not a robot</span>
+                    <strong>reCAPTCHA</strong>
+                </div>
+            </div><br>
+             
+            <div class="button-box">
+                <button type="submit">Submit<i class="fa-solid fa-circle-arrow-right"></i></button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
